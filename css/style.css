@@ -68,6 +68,10 @@ header p {
     margin-right: 10px;
 }
 
+.team-box img:hover {
+    filter: brightness(150%);
+}
+
 .team-box h3 {
     color: white;
     font-size: 12px;
