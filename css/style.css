@@ -5,8 +5,83 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.container {
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Header */
+header h1 {
+    padding-bottom: 30px;
+    color: rgb(231, 9, 120);
+    text-shadow: 1px 1px rgba(28, 1, 15, 0.5);
+}
+
+header p {
+    padding-bottom: 20px;
+}
+
+/* Setting team-box */
+.team-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: calc((100% - 60px) / 3);
+    float: left;
+    margin: 15px 10px;
+}
+
+.team-box:not(a) {
+    background-color: black;
+    color: white;
+}
+
+.team-box img {
+    float: left;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.team-box h3 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 14px;
+}
+
+.team-box p:nth-child(3) {
+    color: white;
+    font-size: 9px;
+}
+
+.team-box a {
+    color: rgb(0, 213, 255);
+    text-decoration: none;
+    font-size: 12px;
 }
